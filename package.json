@@ -1,0 +1,29 @@
+{
+  "name": "prettier-git-hook-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier . --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsh2001/prettier-git-hook-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hsh2001/prettier-git-hook-test/issues"
+  },
+  "homepage": "https://github.com/hsh2001/prettier-git-hook-test#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx prettier . --write"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1"
+  }
+}
